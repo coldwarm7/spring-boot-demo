@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/coldwarm-spring-demo/coldwarm-spring-demo.iml" filepath="$PROJECT_DIR$/coldwarm-spring-demo/coldwarm-spring-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dharma-spring-boot-full/demo.iml" filepath="$PROJECT_DIR$/dharma-spring-boot-full/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dharma-spring-boot-001/dharma-spring-boot-001.iml" filepath="$PROJECT_DIR$/dharma-spring-boot-001/dharma-spring-boot-001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dharma-spring-boot-002/dharma-spring-boot-002.iml" filepath="$PROJECT_DIR$/dharma-spring-boot-002/dharma-spring-boot-002.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-boot-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-boot-demo.iml" />
     </modules>
   </component>
