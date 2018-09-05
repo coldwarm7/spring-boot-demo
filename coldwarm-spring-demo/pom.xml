@@ -25,6 +25,11 @@
     </properties>
 
     <dependencies>
+        <!--redis依赖添加-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
 
         <!--JPA动态查询库 -->
         <dependency>

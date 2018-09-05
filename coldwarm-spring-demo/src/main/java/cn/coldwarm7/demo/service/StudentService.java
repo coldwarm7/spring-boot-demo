@@ -4,6 +4,7 @@ import cn.coldwarm7.demo.dao.StudentSpecificationDao;
 import cn.coldwarm7.demo.domain.Student;
 import com.github.wenhao.jpa.Specifications;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +22,7 @@ public class StudentService {
     private StudentSpecificationDao studentSpecificationDao;
 
     //查询id在30到38之间
+    @Cacheable(cacheNames = "demo.service.student")
     public List<Student> findAll(Student student){
         Specification<Student> specification = Specifications.<Student>and()
                 .between(Objects.nonNull(student.getId()),"id",30,38)
