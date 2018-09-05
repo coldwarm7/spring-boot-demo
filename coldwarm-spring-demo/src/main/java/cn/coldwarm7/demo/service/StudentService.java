@@ -24,7 +24,6 @@ public class StudentService {
     public List<Student> findAll(Student student){
         Specification<Student> specification = Specifications.<Student>and()
                 .between(Objects.nonNull(student.getId()),"id",30,38)
-                .gt()
                 .build();
 
         return studentSpecificationDao.findAll(specification);
