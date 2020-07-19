@@ -1,9 +1,10 @@
 package cn.coldwarm7.demo.domain;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 
 /**
@@ -11,6 +12,11 @@ import java.io.Serializable;
  */
 @Entity
 @Data
+@Table
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Student implements Serializable {
 
     @Id
@@ -20,4 +26,6 @@ public class Student implements Serializable {
     private String birthday;
     private String zhuanye;
     private String likes;
+
+
 }

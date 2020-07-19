@@ -25,9 +25,12 @@ public class StudentService {
     @Cacheable(cacheNames = "demo.service.student")
     public List<Student> findAll(Student student){
         Specification<Student> specification = Specifications.<Student>and()
-                .between(Objects.nonNull(student.getId()),"id",30,38)
+                .between(Objects.nonNull(student),"id",30,38)
                 .build();
-
         return studentSpecificationDao.findAll(specification);
     }
+
+
+
+
 }

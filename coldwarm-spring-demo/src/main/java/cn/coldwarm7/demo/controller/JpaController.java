@@ -26,6 +26,7 @@ public class JpaController {
 
     @GetMapping("/findById")
     public Student findById(@RequestParam Integer id){
+        StudentService studentService = new StudentService();
         return studentDao.findById(id).orElse(new Student());
     }
 
